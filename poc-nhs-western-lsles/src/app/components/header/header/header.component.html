@@ -1,0 +1,46 @@
+<ion-grid>
+    <ion-row>
+        <ion-col size="12">
+            <mat-toolbar class="toolbar" color="accent">
+                <b>Library Service</b>
+                <img class="logo" src="../../../../assets/images/NHSScotland.png">
+            </mat-toolbar>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size="12">
+            <mat-toolbar color="primary">
+                <mat-nav-list class="list-horizontal">
+                    <mat-list-item [routerLink]="['/welcome']" routerLinkActive="router-link-active"
+                        [title]="'Welcome'">Welcome
+                    </mat-list-item>
+                    <mat-list-item [routerLink]="['/become-a-member']" routerLinkActive="router-link-active"
+                        [title]="'Become A Member'">Become A Member
+                    </mat-list-item>
+                    <mat-list-item [routerLink]="['/library-catalogue']" routerLinkActive="router-link-active"
+                        [title]="'Library Catalogue'">Library Catalogue
+                    </mat-list-item>
+                    <mat-list-item>
+                        <p>Request A Journal Article</p>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <p>Suggest A Library Book</p>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <p>Check Book Return Date</p>
+                    </mat-list-item>
+                    <mat-list-item>
+                        <p>Sway</p>
+                    </mat-list-item>
+                </mat-nav-list>
+            </mat-toolbar>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-row>
+    <ion-col size="12">
+        <div class="footer" #footer>
+           Copying Guidlines for NHS Scotland Staff
+          </div>
+    </ion-col>
+</ion-row>
